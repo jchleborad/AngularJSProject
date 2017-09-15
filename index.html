@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Front End Frameworks Project</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+  <h3>My To Do List</h3>
+
+  <form ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" size="25" placeholder="New Item..." />
+    <input type="submit" value="Add" />
+  </form>
+
+  <br />
+  (Click box to mark item complete)
+
+  <div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done" /><span ng-bind="x.todoText"></span>
+  </div>
+
+  <br /><p><button ng-click="remove()">Remove Checked Items</button></p>
+
+  <!-- APP SCRIPTS -->
+  <!-- <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script> -->
+  <script src="app.js" charset="utf-8"></script>
+  <script src="services/userServices.js" charset="utf-8"></script>
+  <script src="contollers/homeController.js" charset="utf-8"></script>
+  <script src="contollers/aboutController.js" charset="utf-8"></script>
+
+</body>
+
+</html>
