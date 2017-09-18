@@ -1,0 +1,28 @@
+.list {
+  color       : red;
+  font-family : Trebuchet MS;
+}
+
+.add {
+  color            : white;
+  border-radius    : 5px;
+  background-color : black;
+}
+
+.remove {
+  color            : yellow;
+  border-color     : black;
+  border-width     : 2px;
+  border-radius    : 10px;
+  background-color : red;
+  font-weight      :  100;
+}
+
+.entry {
+  background-color : #ccddff;
+}
+
+.complete {
+  color            : white;
+  background-color : black;
+}
