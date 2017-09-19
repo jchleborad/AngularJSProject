@@ -1,21 +1,19 @@
 .list {
-  color       : red;
+  color       : blue;
   font-family : Trebuchet MS;
 }
 
 .add {
-  color            : white;
-  border-radius    : 5px;
-  background-color : black;
+  border-radius : 5px;
 }
 
 .remove {
   color            : yellow;
   border-color     : black;
   border-width     : 2px;
-  border-radius    : 10px;
-  background-color : red;
-  font-weight      :  100;
+  border-radius    : 5px;
+  background-color : purple;
+  font-weight      : 100;
 }
 
 .entry {
@@ -25,4 +23,8 @@
 .complete {
   color            : white;
   background-color : black;
+}
+
+.title {
+  font-family : Trebuchet MS;
 }
